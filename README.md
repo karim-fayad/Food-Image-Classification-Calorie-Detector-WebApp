@@ -1,6 +1,6 @@
 # Food-Image-Classification-Calorie-Detector-WebApp
 Problem:
-
+ 
 Maintaining a healthy diet and understanding nutritional values is crucial for overall wellbeing. However, many individuals struggle to monitor their food intake due to busy lifestyles and a lack of accessible tools for calorie tracking.
 
 A common question arises: What am I eating, and how many calories does it contain?
