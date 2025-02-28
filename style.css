@@ -1,0 +1,150 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #25252b;
+    
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #25252b;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(11, 255, 3);
+    border: 2px solid rgb(11, 255, 3);
+}
+
+/* Heading Styles */
+h1,
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+/* Form Box Styles */
+.form-box {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Container */
+.form-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #25252b;
+    border-radius: 8px;
+    background: #25252b;
+}
+
+/* Form Input Styles */
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid rgb(11, 255, 3);
+    overflow: hidden;
+    z-index: 1;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    height: 300%;
+    width: 100%;
+    background: linear-gradient(#25252b, rgb(11, 255, 3), #25252b, rgb(11, 255, 3));
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    transition: .5s;
+    color: #fff;    
+}
+
+button:hover:before {
+    top: 0;
+}
+
+/* Logs Section */
+#logsContainer {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: linear-gradient(#25252b, rgb(11, 255, 3), #25252b, rgb(11, 255, 3));
+    color: #fff;
+}
+
+/* Result Section */
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #25252b;
+    border-radius: 8px;
+    background: #25252b;
+}
+
+.result-container img {
+    margin-bottom: 15px;
+}
+
+/* Logout Button */
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.logout-btn .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+/* Error Messages */
+.error {
+    color: #d9534f;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Hidden Elements */
+.hidden {
+    display: none;
+}
